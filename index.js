@@ -6,11 +6,11 @@ const simpleGit = require('simple-git')();
 const port = 8081
 
 app.get('/', function(req, res) {
-  res.end('BOOOE\n');
+  res.end('Blahhh zzz\n');
 });
 app.post('/updateWebsite', function(req, res) {
   console.log('update the website')
-  res.end('BOOOE\n');
+  res.end('Blahhh zzz\n');
   simpleGit.pull((err,test)=>{
     console.log(err)
     console.log(test)

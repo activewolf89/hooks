@@ -8,7 +8,7 @@ const port = 8081
 app.get('/', function(req, res) {
   res.end('i think we are pretty close to ready\n');
 });
-app.get('/updateWebsite', function(req, res) {
+app.post('/updateWebsite', function(req, res) {
   console.log('update the website')
   res.end('i think we are pretty close to ready\n');
   simpleGit.pull((err,test)=>{

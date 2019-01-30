@@ -7,7 +7,7 @@ http.createServer(function (request, response) {
    response.writeHead(200, {'Content-Type': 'text/plain'});
 
    // Send the response body as "Hello World"
-   response.end('The Future will GOD DAMN FUCK ME\n');
+   response.end('The future may be brighter than one thinks\n');
 }).listen(8081);
 
 // Console will print the message

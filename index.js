@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
 });
 app.post('/updateWebsite', function(req, res) {
   console.log('update the website')
-  res.end('THERE WILL ONLY BE CONTAINED BLOOOD\n');
+  res.end('THERE WILL ONLY BE CONTAINED\n');
   simpleGit.pull((err,test)=>{
     console.log(err)
     console.log(test)

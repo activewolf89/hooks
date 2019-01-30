@@ -1,13 +1,21 @@
-var http = require("http");
+var express = require('express');
+var path = require('path');
+var app = express();
+var bodyParser = require('body-parser')
 
-http.createServer(function (request, response) {
-   // Send the HTTP header
-   // HTTP Status: 200 : OK
-   // Content Type: text/plain
-   response.writeHead(200, {'Content-Type': 'text/plain'});
+const port = 8080
 
-   // Send the response body as "Hello World"
-   response.end(':BLAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH:D:DD:D\n');
-}).listen(8081);
+app.get('/', function(req, res) {
+  res.end('The Future will happen\n');
+});
+app.get('/updateWebsite', function(req, res) {
+  console.log('update the website')
+  res.end('The Future will happen\n');
 
-// Console will print the message
+});
+
+app.listen(port, (err)=>{
+  if(err){
+  }
+  console.log(`listening on ${port}`)
+})
